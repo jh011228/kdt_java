@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/windows,java,macos,eclipse
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,java,macos,eclipse
+# Created by https://www.toptal.com/developers/gitignore/api/java,eclipse,windows,macos
+# Edit at https://www.toptal.com/developers/gitignore?templates=java,eclipse,windows,macos
 
 *.exe
 resource/
@@ -64,7 +64,8 @@ local.properties
 
 # Uncomment this line if you wish to ignore the project description file.
 # Typically, this file would be tracked if it contains build/dependency configurations:
-#.project
+.project
+.classpath
 
 ### Eclipse Patch ###
 # Spring Boot Tooling
@@ -155,4 +156,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,java,macos,eclipse
+# End of https://www.toptal.com/developers/gitignore/api/java,eclipse,windows,macos
