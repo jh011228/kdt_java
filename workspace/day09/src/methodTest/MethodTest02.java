@@ -1,0 +1,60 @@
+package methodTest;
+//10번 : 메소드 호출방법
+public class MethodTest02 {
+	public static void main(String[] args) {
+		
+		//메소드 호출 시 2가지
+		//1) 메소드 정의하는 부분에서 static 키워드를 붙인다(static 키워드 배우기 전까지 사용 x)
+		// 		main 메소드가 메모리에 할당될 때 해당 메소드도 같이 메모리 할당시키는 방법
+		//2) 메인 메소드에 해당 메소드가 있는 클래스를 알려준다
+		// 클래스명 객체명 = new 클래스명();
+		MethodTest02 mt = new MethodTest02();
+//		System.out.println(mt);
+		//매개변수 x, 리턴값 x 메소드 호출 = > 객체명.메소드명();
+		mt.printHello();
+		
+		//매개변수 o 리턴값 x 메소드 호출 => 객체명.메소드명(인수);
+		mt.greet("홍길동");
+		mt.greet("짱구");
+		mt.greet("철수");
+		//매개변수 x 리턴값 o 메소드 호출 => syso(객체명.메소드명());
+		//							or 리턴값의타입 변수명 = 객체명.메소드명();
+		System.out.println("1부터 10까지의 합 : "+mt.printTotal());
+		int number = mt.printTotal();
+		System.out.println("1부터 10까지의 합 : "+number);
+		//매개변수 o 리턴값 o 메소드 호출 => syso(객체명.메소드명(인수));
+		//						or 리턴값의타입 변수명 = 객체명.메소드명(인수);
+		System.out.println("1부터 num까지의 합 : "+mt.printNum(6));
+		int number2 = mt.printNum(11);
+		System.out.println("1부터 num까지의 합 : "+number2);
+	}
+	
+	//매개변수 x, 리턴값 x 메소드 정의
+	//"안녕하세요" 출력하는 메소드
+	void printHello() {
+		System.out.println("안녕하세요!");
+	}
+//	매개변수 o, 리턴값 x 메소드 정의
+//	이름 + 님 환영합니다!
+	void greet(String name) {
+		System.out.println(name+"님 환영합니다.");
+	}
+	//매개변수 x, 리턴값 o 메소드 정의
+//	1부터 10까지의 합을 반환하는 메소드
+	int printTotal() {
+		int total = 0;
+		for(int i=1;i<=10;i++) {
+			total+=i;
+		}
+		return total;
+	}
+	//매개변수 o, 리턴값 o 메소드 정의
+	//정수 1개를 넘겨받아 1부터 넘겨받은 정수의 합 구하기
+	int printNum(int num) {
+		int total = 0;
+		for(int i=1;i<=num;i++) {
+			total+=i;
+		}
+		return total;
+	}
+}
