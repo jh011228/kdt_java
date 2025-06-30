@@ -22,6 +22,7 @@ public class Rogue extends Character {
 		super.normalAttack();
 	}
 
+	
 	@Override
 	public void skillAttack() {
 		super.skillAttack();
