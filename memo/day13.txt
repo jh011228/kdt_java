@@ -338,4 +338,20 @@ reference 자료형
 		//메소드
 	}
 
+10. 다형성 특징
+	오버로딩
+	오버라이딩
+
+
+11. 접근 제한자
+	public
+	protected
+	(default)		
+	private
+
+
+
+
+
+
 

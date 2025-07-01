@@ -17,10 +17,11 @@ public class Character {
       this.nomalDmg = nomalDmg;
       this.skillDmg = skillDmg;
       this.specialDmg = specialDmg;
-      showStatus();
+//      showStatus();
    }
 
-   //메소드
+
+//메소드
    // 현재 캐릭터의 HP와 MP 상태를 출력하는 메소드
    public void showStatus() {
       System.out.println("--- 현재 상태 ---");
@@ -33,7 +34,7 @@ public class Character {
    public void normalAttack() {
       System.out.println(name + "이(가) 기본공격을 실행했습니다.");
       System.out.println("적에게 " + nomalDmg + " 만큼 피해를 입혔습니다.");
-      showStatus();
+//      showStatus();
    }
 
    // 스킬 공격을 수행하는 메소드
@@ -43,7 +44,7 @@ public class Character {
       System.out.println("적에게 " + skillDmg + " 만큼 피해를 입혔습니다.");
       System.out.println("mp가 10 감소했습니다.");
       mp -= 10;
-      showStatus();
+//      showStatus();
    }
 
    
@@ -67,7 +68,7 @@ public class Character {
          System.out.println("체력이 없어서 부활합니다.");
          hp = maxHp;
          mp = maxMp;
-         showStatus();
+//         showStatus();
       }
    }
 }

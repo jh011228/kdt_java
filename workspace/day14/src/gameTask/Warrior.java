@@ -21,7 +21,7 @@ public class Warrior extends Character {
 		System.out.println("적에게 " + skillDmg + " 만큼 피해를 입혔습니다.");
 		System.out.println("mp가 3 감소했습니다.");
 		mp -=3;
-		showStatus();
+//		showStatus();
 	}
 
 	@Override
@@ -33,6 +33,6 @@ public class Warrior extends Character {
 		if(hp<=0) {
 			revive();
 		}
-		showStatus();
+//		showStatus();
 	}
 }

@@ -1,0 +1,10 @@
+package casting01;
+//4번 : casting 자식 클래스
+public class SmartTv extends Tv {
+	
+	//메소드
+	void neflex() {
+		System.out.println("넷플릭스 실행");
+	}
+	
+}
