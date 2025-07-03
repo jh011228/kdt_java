@@ -32,6 +32,8 @@ public class Ex177_4 {
 			}
 			
 		}
-			System.out.println(Arrays.deepToString(ma));			
+			for(int[] i : ma) {
+				System.out.println(Arrays.toString(i));
+			}
 	}
 }

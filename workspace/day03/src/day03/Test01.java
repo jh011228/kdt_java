@@ -6,6 +6,6 @@ public class Test01 {
 		System.out.println("최장현");
 		// syso 쓰고 ctrl + space bar 엔터 출력 메소드 자동완성 단축키
 		// 실행 단축키 ctrl + F11
-		
+//		double pie = 3.1415;
 	}
 }
