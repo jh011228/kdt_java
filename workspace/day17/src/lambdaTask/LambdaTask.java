@@ -1,6 +1,6 @@
-package lambdaTest;
+package lambdaTask;
 //6번 : 람다식 만드는 방법
-public class LambdaTest {
+public class LambdaTask {
 //   매개변수 -> 바디
    
    void printHello() {
